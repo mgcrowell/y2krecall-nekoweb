@@ -1,26 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="/.nekoweb-api/static/site.js" type="text/javascript" defer></script>
+    <script src='/assets/scripts/nekostats.js'></script>
+    <script src='/assets/scripts/nekocafe.js'></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='assets/css/styles.css'>
     <title>Y2kRECALL</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/icon.webp">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.webp">
     <style>
-        
         body {
-            font-family: sans-serif;            
+            font-family: sans-serif;
         }
     </style>
 </head>
+
 <body>
-<header>
-<h1><a href="/" class="title">Y2kRECALL<span class="url">.nekoweb.org</span></a></h1>
-</header>
-        <div>
-            <!--# views -->
-            <!--# updates -->
-            <!--# followers -->
+    <div class="main-content" style="overflow:auto">
+        <div class="topbar">
+            <p>Home</p>
+            <div class="controls">
+                <div class="min"></div>
+                <div class="max"></div>
+                <div class="close"></div>
+            </div>
         </div>
+        <div class="tab">
+            <header>
+                <h1><a href="/" class="title">Y2kRECALL<span class="url">.nekoweb.org</span></a></h1>
+            </header>
+
+            <div style="display:flex">
+                <!--Music Player-->
+                <div class="music-text"><audio loop id="track">
+                    <source src="assets/audio/music.mp3" type="audio/mpeg" />
+                </audio>
+                
+                <div id="player-container" title="Pause/Play Music">
+                    <button id="play-pause" class="play">Play</button>
+                </div>
+                
+                <script src='assets/scripts/musicplayer.js'></script>
+                <p class="centered">&#9835; FearofDark - The Coffee Zone &#9835;</p>
+                
+            </div>
+            <!--Scrolling Text-->
+            <div class="scrolling-text">
+                <script src="assets/scripts/random_marquee.js"></script>
+                <marquee id="marquee" direction="left" scrollamount="5">
+                    <p id="scrolling-text"></p>
+                </marquee>
+            </div>
+        </div>
+        <!--Main Content-->
+            <div class="grid-one">
+                <!--Navigation-->
+                <div class="left-sidebar" style="grid-area: box-1;">
+                    <nav class="desktop-nav">
+                        <h2>NAVIGATION <img src="/assets/images/nuko/nuko-neutral.gif" alt="" class="nuko freeze"></h2>
+                        <ul>
+                            <li><a class="nav-button" href="/">/Homepage</a></li>
+                            <li><a class="nav-button" href="/about">/About Me</a></li>
+                            <li><a class="nav-button" href="/blog">/Blog</a></li>
+                            <li><a class="nav-button" href="/links">/Links</a></li>
+                            <li><a class="nav-button" href="/webrings">/Webrings</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li><a class="nav-button" href="/">Home</a></li>
+                            <li><a class="nav-button" href="/about">About</a></li>
+                            <li><a class="nav-button" href="/blog">Blog</a></li>
+                            <li><a class="nav-button" href="/links">Links</a></li>
+                            <li><a class="nav-button" href="/webrings">Webrings</a></li>
+                        </ul>
+                    </nav>
+
+                    </section>
+                    <section class="mini-tab" style="grid-area: tab-2;">
+                        <div class="topbar">
+                            <h2>88x31 Button</h2>
+                            <div class="controls">
+                                <div class="min"></div>
+                                <div class="max"></div>
+                                <div class="close"></div>
+                            </div>
+                        </div>
+                        <div class="tab padded centered" style="height:100px">
+                            <img src="/assets/images/button.jpg" alt=" 88x31 Button" class="site-button"><br>
+                        </div>
+                    </section>
+                </div>
+                <!--Welcome-->
+                <main class="grey-box welcome" style="grid-area: box-2;">
+                    <div style="grid-area:welcome-text;" class="welcome-text">
+                        <h2>Welcome to Y2kRECALL.nekoweb.org</h2>
+                        <a href="https://nekoweb.org/follow/Y2kRECALL.nekoweb.org"><button>Follow me on Nekoweb</button></a>
+                    </div>
+                </main>
+                <!--Blog Updates-->
+                <section class="grey-box scroll" style="grid-area: box-3;">
+                    <h2>LATEST BLOG UPDATES <a href="/rss.xml"><img src="/assets/images/icons/rss.png" alt="RSS"
+                        class="nuko" style="height:1.1em;"></a> <img src="../assets/images/nuko/nuko-waving.gif"
+                        alt="" class="nuko freeze"></h2>
+                        <hr>
+                    </section>
+                </div>
+            </div>
+        <div class="grid-two">
+            <!--About Me-->
+            <section class="grey-box" style="grid-area:box-6; padding:0;">
+                <div class="mini-tab">
+                    <div class="topbar">
+                        <h2>About Me</h2>
+                        <div class="controls">
+                            <div class="min"></div>
+                            <div class="max"></div>
+                            <div class="close"></div>
+                        </div>
+                    </div>
+                    <div class="tab padded">
+                        <div class="about-top">
+                            <img class="alibaba grey-img" src="/assets/images/icon.webp"
+                                alt="Profile Picture">
+                            <div class="about-top-text">
+                                <p><b>Y2kRECALL</b></p>
+                                <p>23 years old</p>
+                                <p>Male (he/him)</p>
+                                <p>Currently Feeling: <a href="https://www.imood.com/users/redacted"><img
+                                            class="grey-img"
+                                            src="https://moods.imood.com/display/uname-redacted/fg-000000/bg-B8B8B8/imood.gif"
+                                            height="12" style="vertical-align:text-bottom;" alt="Mood Indicator"></a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr style="margin:0.5em 0;">
+                        <p style="margin-bottom:0.5em; margin-top:-0;"><b>Current Status:</b></p>
+                        <div id="nekocafe-status"></div>
+                    </div>
+                </div>
+                <section class="mini-tab">
+                    <div class="topbar">
+                        <h2>Site Stats</h2>
+                        <div class="controls">
+                            <div class="min"></div>
+                            <div class="max"></div>
+                            <div class="close"></div>
+                        </div>
+                    </div>
+                    <div class="tab padded" style="height:85px">
+                        <ul style="line-height: 1.2em;">
+                            <li id="created">Created:</li>
+                            <li id="updated">Updated:</li>
+                            <li id="visitors">Visitors:</li>
+                            <li id="followers">Followers:</li>
+                        </ul>
+                    </div>
+                </section>
+                <!--Guestbook-->
+                <div class="grey-box" style="grid-area:box-8; padding: 0;">
+                    <section id="c_widget"></section>
+                    <script src="/assets/scripts/comment-widget.js"></script>
+                </div>
+        </div>
+        <footer>
+            <p>Hosted on <a href="https://nekoweb.org/">Nekoweb</a> | Created with <a
+                    href="https://www.11ty.dev/">11ty</a></p>
+        </footer>
+    </div>
+    </div>
 </body>
+
+</html>
+
+
+
+</body>
+
 </html>

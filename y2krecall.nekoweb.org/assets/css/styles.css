@@ -101,7 +101,7 @@ summary:hover {
 .topbar {
 	height: 2.25em;
 	width: 100%;
-	background-color: #404040;
+	background-color: #13134b;
 	z-index: 1;
 	box-shadow: inset -1px -1px #404040,
 		inset 1px 1px #DFDFDF,
@@ -175,7 +175,7 @@ summary:hover {
 }
 
 header {
-	background-color: #404040;
+	background-color: #154976;
 	background-image: url(../images/header.webp);
 	background-position: center right;
 	background-size: cover;
@@ -198,22 +198,37 @@ header .title {
 
 header .title:hover {
 	color: #ABABAB;
-	text-decoration: none;
-	-ms-transform: scale(1.03) rotate(1deg);
-	-webkit-transform: scale(1.03) rotate(1deg);
-	transform: scale(1.03) rotate(1deg);
+	text-decoration: underline;
+	-ms-transform: scale(1.03) rotate(0deg);
+	-webkit-transform: scale(1.03) rotate(0deg);
+	transform: scale(1.03) rotate(0deg);
 }
 
 .music-text {
-	background-color: #404040;
+	background-color: #151226;
 	color: white;
 	text-align: center;
 	border-bottom: 1px solid black;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	width: 50%;
 }
-
+.music-text p.centered {
+	flex: 1; /* This makes it take all available space */
+    text-align: center;
+    margin: 0; /* Remove any default margins */
+}
+.scrolling-text{
+	background-color: #151226;
+	color: white;
+	text-align: center;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width:50%
+}
 #non-marquee {
 	display: none;
 	text-align: center;
@@ -227,7 +242,7 @@ header .title:hover {
 	width: 20px;
 	padding: 10px;
 	z-index: 2;
-	background-image: url(/assets/images/icons/play.png);
+	background-image: url(../images/icons/play.png);
 	background-repeat: no-repeat !important;
 	background-position: center;
 	background-size: 16px;
@@ -242,11 +257,11 @@ header .title:hover {
 }
 
 .play {
-	background-image: url(/assets/images/icons/play.png) !important;
+	background-image: url(../images/icons/play.png) !important;
 }
 
 .pause {
-	background-image: url(/assets/images/icons/pause.png) !important;
+	background-image: url(../images/icons/pause.png) !important;
 }
 
 .grid-one {
@@ -361,7 +376,7 @@ hr {
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: 38% 62%;
-	grid-template-areas: "futaba welcome-text";
+	grid-template-areas: "welcome-text";
 	justify-content: center;
 	align-items: start;
 	text-align: center;
@@ -388,7 +403,7 @@ hr {
 	opacity: 90%;
 }
 
-.futaba-img {
+.aba-img {
 	width: 100%;
 	align-self: end;
 	padding-right: 0.5em;
@@ -399,7 +414,7 @@ hr {
 	transition: transform .2s;
 }
 
-.futaba-img:hover {
+.aba-img:hover {
 	filter: grayscale(50%) drop-shadow(3px 3px 3px #9E9E9E);
 	-webkit-filter: grayscale(50%) drop-shadow(3px 3px 3px #9E9E9E);
 	-moz-filter: grayscale(50%) drop-shadow(3px 3px 3px #9E9E9E);
@@ -438,6 +453,7 @@ nav ul {
 	height: 20px;
 	background-image: linear-gradient(#D9D9D9, #B8B8B8);
 	padding-top: 4px;
+	padding-left: 4px;
 }
 
 .desktop-nav .nav-button:hover {
@@ -682,7 +698,7 @@ nav ul {
 /* Responeko Webring */
 /* Responeko Webring */
 .phone {
-	background-image: url(/assets/images/neko-bg.png) !important;
+	background-image: url(/../images/neko-bg.png) !important;
 }
 
 .phone ::-webkit-scrollbar {
@@ -922,7 +938,7 @@ footer a:hover {
 	.welcome {
 		grid-template-rows: auto auto;
 		grid-template-columns: 1fr;
-		grid-template-areas: "welcome-text""futaba";
+		grid-template-areas: "welcome-text";
 		align-items: start;
 		justify-items: center;
 	}
@@ -1010,13 +1026,13 @@ footer a:hover {
 
 ::-webkit-scrollbar-track {
 	background-color: #fff;
-	background-image: url(/assets/images/icons/scrolltrack.png);
+	background-image: url(/../images/icons/scrolltrack.png);
 	image-rendering: pixelated;
 	cursor: default;
 }
 
 ::-webkit-scrollbar-button:vertical:increment {
-	background-image: url(/assets/images/icons/scrolldown.png);
+	background-image: url(/../images/icons/scrolldown.png);
 	image-rendering: pixelated;
 	width: 14px;
 	height: 14px;
@@ -1025,7 +1041,7 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-button:vertical:decrement {
-	background-image: url(/assets/images/icons/scrollup.png);
+	background-image: url(/../images/icons/scrollup.png);
 	image-rendering: pixelated;
 	box-shadow: inset -1px -1px #000, inset 1px 1px #B8B8B8, inset -2px -2px #7B7B7B, inset 2px 2px #FFFFFF;
 	width: 14px;
@@ -1034,7 +1050,7 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-button:horizontal:decrement {
-	background-image: url(/assets/images/icons/scrollleft.png);
+	background-image: url(/../images/icons/scrollleft.png);
 	image-rendering: pixelated;
 	width: 14px;
 	height: 14px;
@@ -1043,7 +1059,7 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-button:horizontal:increment {
-	background-image: url(/assets/images/icons/scrollright.png);
+	background-image: url(/../images/icons/scrollright.png);
 	image-rendering: pixelated;
 	box-shadow: inset -1px -1px #000, inset 1px 1px #B8B8B8, inset -2px -2px #7B7B7B, inset 2px 2px #FFFFFF;
 	width: 14px;
