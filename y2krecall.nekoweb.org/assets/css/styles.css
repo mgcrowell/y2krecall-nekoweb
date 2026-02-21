@@ -4,11 +4,12 @@
 }
 
 html {
-	background-image: url(../images/main-background.webp);
+	background-image: url(../images/backgrounds/1.png);
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: #060618;
 }
 
 body {
@@ -1026,13 +1027,13 @@ footer a:hover {
 
 ::-webkit-scrollbar-track {
 	background-color: #fff;
-	background-image: url(/../images/icons/scrolltrack.png);
+	background-image: url(../images/icons/scrolltrack.png);
 	image-rendering: pixelated;
 	cursor: default;
 }
 
 ::-webkit-scrollbar-button:vertical:increment {
-	background-image: url(/../images/icons/scrolldown.png);
+	background-image: url(../images/icons/scrolldown.png);
 	image-rendering: pixelated;
 	width: 14px;
 	height: 14px;
@@ -1041,7 +1042,7 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-button:vertical:decrement {
-	background-image: url(/../images/icons/scrollup.png);
+	background-image: url(../images/icons/scrollup.png);
 	image-rendering: pixelated;
 	box-shadow: inset -1px -1px #000, inset 1px 1px #B8B8B8, inset -2px -2px #7B7B7B, inset 2px 2px #FFFFFF;
 	width: 14px;
@@ -1050,7 +1051,7 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-button:horizontal:decrement {
-	background-image: url(/../images/icons/scrollleft.png);
+	background-image: url(../images/icons/scrollleft.png);
 	image-rendering: pixelated;
 	width: 14px;
 	height: 14px;
@@ -1059,7 +1060,7 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-button:horizontal:increment {
-	background-image: url(/../images/icons/scrollright.png);
+	background-image: url(../images/icons/scrollright.png);
 	image-rendering: pixelated;
 	box-shadow: inset -1px -1px #000, inset 1px 1px #B8B8B8, inset -2px -2px #7B7B7B, inset 2px 2px #FFFFFF;
 	width: 14px;

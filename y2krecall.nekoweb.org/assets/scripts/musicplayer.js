@@ -24,3 +24,28 @@ var audio = document.getElementById("track");
    audio.volume = 0.2;
 }
 setVolume();
+
+// Create an AudioContext
+let audioContext = null;
+
+function initAudio() {
+    if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        
+        // Resume audio context on user interaction
+        document.addEventListener('click', function resumeAudio() {
+            if (audioContext.state === 'suspended') {
+                audioContext.resume();
+            }
+            document.removeEventListener('click', resumeAudio);
+            
+            // Start playing after first interaction
+            setTimeout(() => {
+                playPause();
+            }, 100);
+        }, { once: true });
+    }
+}
+
+// Call initAudio on load
+window.addEventListener('load', initAudio);
