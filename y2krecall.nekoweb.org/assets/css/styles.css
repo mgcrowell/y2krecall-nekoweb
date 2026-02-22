@@ -147,7 +147,7 @@ summary:hover {
 
 header {
 	background-color: #154976;
-	background-image: url(../images/header.png);
+	background-image: url(/assets/images/header.png);
 	background-position: center right;
 	background-size: cover;
 	padding: 2em 1.25em;
