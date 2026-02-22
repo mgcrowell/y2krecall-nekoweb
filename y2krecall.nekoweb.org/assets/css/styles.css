@@ -24,58 +24,6 @@ body {
 	margin: 20px auto;
 }
 
-#scanlines {
-	background-image: url(../images/scanlines.png);
-	mix-blend-mode: darken;
-	opacity: 0.15;
-	z-index: 5;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	left: 0;
-	top: 0;
-}
-
-#top-overlay {
-	background-image: url(../images/static.webp);
-	mix-blend-mode: darken;
-	pointer-events: none;
-	background-size: 50%;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	position: fixed;
-	opacity: 0.1;
-	z-index: 4;
-}
-
-#vignette {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	box-shadow: 0 0 200px rgba(0, 0, 0, 0.5) inset;
-	pointer-events: none;
-	z-index: 6;
-}
-
-#bg-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/static.webp);
-	mix-blend-mode: darken;
-	opacity: .25;
-	background-size: 50%;
-	pointer-events: none;
-	z-index: -1;
-}
-
 input {
 	accent-color: #404040;
 }
@@ -97,6 +45,7 @@ summary:hover {
 
 .main-content {
 	width: 850px;
+	
 }
 
 .topbar {
@@ -198,7 +147,7 @@ summary:hover {
 
 header {
 	background-color: #154976;
-	background-image: url(../images/header.webp);
+	background-image: url(../images/header.png);
 	background-position: center right;
 	background-size: cover;
 	padding: 2em 1.25em;
@@ -207,14 +156,16 @@ header {
 	align-items: center;
 	font-size: 2em;
 	border-bottom: 1px solid black;
+	text-align: center;
+	justify-content: center;
 }
 
 header .title {
-	transition: transform .2s;
+	transition: transform 1s;
 	font-weight: lighter;
 	text-decoration: none;
 	color: white;
-	font-family: moms-typewriter, 'courier new', monospace;
+	font-family: hack, 'hack', monospace;
 	display: block;
 }
 
@@ -544,7 +495,7 @@ nav ul {
 	gap: 0.75em;
 }
 
-.alibaba {
+.pp {
 	height: 60px;
 	width: 60px;
 	align-self: center;
@@ -873,20 +824,12 @@ footer a:hover {
 	opacity: 90%;
 }
 
-@font-face {
-	font-family: "moms-typewriter";
-	src: url(../fonts/moms-typewriter.ttf);
-}
 
 @font-face {
-	font-family: "pixelmix";
-	src: url(../fonts/pixelmix.ttf);
+	font-family: hack;
+	src: url(../fonts/hack.ttf);
 }
 
-@font-face {
-	font-family: "animal-crossing-wild-world";
-	src: url(../fonts/animal-crossing-wild-world.ttf);
-}
 
 @media only screen and (max-width: 620px) {
 	body {
