@@ -125,6 +125,10 @@ summary:hover {
 	padding-left: 0.25em;
 }
 
+.topbar p:hover {
+	color: gray
+}
+
 .controls {
 	display: flex;
 	flex-direction: row;
@@ -147,15 +151,27 @@ summary:hover {
 
 .min {
 	background-image: url(../images/icons/min.png);
+	margin-left: 2px;
 }
 
 .max {
 	background-image: url(../images/icons/max.png);
+	margin-left: 2px;
 }
 
 .close {
 	background-image: url(../images/icons/close.png);
 	margin-left: 2px;
+}
+.close:hover {
+	background-image: url(../images/icons/neko.png);
+}
+.min:hover {
+	background-image: url(../images/icons/min_hover.png);
+}
+
+.max:hover {
+	background-image: url(../images/icons/max_hover.png);
 }
 
 .tab {
@@ -173,6 +189,11 @@ summary:hover {
 		inset 6px 6px #000000;
 	padding: 6px;
 	margin-top: -6px;
+	overflow: hidden;
+	position: relative;
+}
+.window-content {
+	padding: 50px;
 }
 
 header {
@@ -958,6 +979,13 @@ footer a:hover {
 	.timezone {
 		height: 100px;
 	}
+}
+
+.stamp {
+	width: 99px;
+	height: 57px;
+	object-fit: contain;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 850px) {
