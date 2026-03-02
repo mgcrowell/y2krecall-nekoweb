@@ -493,6 +493,7 @@ nav ul {
 	display: flex;
 	flex-direction: row;
 	gap: 0.75em;
+	align-items: center;
 }
 
 .pp {
